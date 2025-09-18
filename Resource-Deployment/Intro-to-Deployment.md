@@ -10,7 +10,7 @@
 
 **Understanding Terraform and AWS Provider Code**
 ---
-![alt text](Screenshots/image-1.png)
+![alt text](../Screenshots/image-1.png)
 
 **This code is split into two blocks:**
 ---
@@ -61,3 +61,7 @@ provider "aws" {
 - Ensures Terraform can track resources properly (idempotency).
 
 - Without terraform init, you can’t run other commands like plan or apply.
+
+**So when starting a new project:**
+---
+- Go to terraform registry, find your provider, and copy the **provider code**, create a `.tf `file, paste the code, run `terraform init`

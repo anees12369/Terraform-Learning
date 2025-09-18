@@ -8,8 +8,6 @@
 
 - Terraform’s job = compares the **desired** state with the **current state**, and then figures out the exact changes needed to **make them match** 
 
-![alt text](Screenshots/image.png)
-
 **Importance of `.tfstate`**
 ---
 - Without the state file, Terraform wouldn’t know what's already deployed and would have no way to tell if you wanted to **add, change or delete** something.
