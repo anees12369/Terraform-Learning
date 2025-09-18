@@ -44,3 +44,20 @@ provider "aws" {
   region = "us-east-1"
 }
 ```
+**The Terraform init Command**
+---
+- **Purpose:** The very first command you run in any Terraform project. It initializes your working directory so Terraform can function.
+
+**What it does:**
+
+- **Initializes the backend** → sets up where Terraform will store its state (local file or remote storage like S3).
+
+- **Downloads provider plugins** → based on your **terraform and provider blocks**, it fetches the necessary providers (e.g., AWS) from the Terraform Registry.
+
+**Why it’s important:**
+
+- Prepares your workspace.
+
+- Ensures Terraform can track resources properly (idempotency).
+
+- Without terraform init, you can’t run other commands like plan or apply.
