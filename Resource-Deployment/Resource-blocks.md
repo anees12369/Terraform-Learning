@@ -13,6 +13,7 @@
 **Structure:**
 
 - `resource "<type>" "<name>"` { ... }
+- e.g. aws_instance.Test | type.name
 - Type = resource type from the provider
 - Name = The name you give the resource 
 
