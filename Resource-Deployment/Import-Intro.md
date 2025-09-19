@@ -19,7 +19,7 @@
 
 **Example Import Block**
 ---
-![alt text](Screenshots/image-5.png)
+![alt text](../Screenshots/image-5.png)
 
 **or**
 
