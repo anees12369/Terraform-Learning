@@ -2,7 +2,7 @@
 
 **Local State Files**
 ---
-- By default, Terraform stores the state file locally in the project directory.
+- By default, Terraform stores the state file **locally** in the project directory.
 
 - **Easy setup:** no extra configuration needed.
 
