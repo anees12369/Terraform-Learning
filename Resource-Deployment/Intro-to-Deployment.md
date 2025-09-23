@@ -17,8 +17,9 @@
 
 1.**The Terraform Block**
 
-- **Purpose:** Tells Terraform which providers it needs, where to download them from, and which version to use.
+- **Purpose:** Tells Terraform which providers it needs, where to download them from, and which version to use and allows you to configure the backend
 
+- 
 ```bash
 terraform {
   required_providers {
@@ -33,6 +34,8 @@ terraform {
 
 - `"hashicorp/aws"` → This means Terraform will download the AWS provider plugin from the **Terraform Registry under the hashicorp namespace.**
 - `version = "5.62.0"` → Locks the AWS provider to this version.
+
+- *Backend block can be added within this block, see Configure-Backend.md*
 
 2.**The Provider Block**
 
