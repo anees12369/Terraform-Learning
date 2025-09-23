@@ -21,3 +21,13 @@
 - **Backups & security:** Remote backends handle automatic backups and encryption, making the state both **secure and recoverable**.
 
 - A **remote backend** is a storage system (outside your local machine) where Terraform keeps its state file. e.g. S3 buckets, Terraform Cloud.
+
+**Best Practices for State Files**
+---
+- **Backups** → Always keep a backup of your state files (local or remote) for recovery.
+
+- **State locking** → Prevents multiple people from updating the state at the same time, which could corrupt it (e.g., S3 + DynamoDB).
+
+- **Encryption & access control** → State files often contain sensitive data (like secrets), so ensure encryption is enabled and only the right people/roles have access.
+
+- **Version control** → Never commit state files to Git (too sensitive), but always keep your Terraform configuration in version control to track changes safely.

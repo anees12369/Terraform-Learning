@@ -32,4 +32,9 @@ provider "aws" {
 ---
 - Terraform can create EC2 with hardcoded keys **in the provider block**
 
-- But the S3 backend **ignores those keys and only uses environment variables or AWS CLI profiles for credentials.**
+- But the S3 backend **ignores those keys and only uses environment variables or AWS CLI profiles for credentials:**
+
+- `export AWS_ACCESS_KEY_ID=`
+- `export AWS_SECRET_ACCESS_KEY=`
+- `export AWS_DEFAULT_REGION=`
+
