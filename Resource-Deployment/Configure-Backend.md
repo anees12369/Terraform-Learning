@@ -8,3 +8,28 @@
 
 3. Initialize Terraform backend with `terraform init.`
 
+**An example of backend block:**
+---
+```bash
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "6.14.0"
+    }
+  }
+   backend "s3" {
+    bucket         = "remote-state-file-anees"   # must already exist in AWS
+    key            = "terraform.tfstate"   # path inside the bucket
+    region         = "eu-west-1"                   # bucket region
+  }
+}  
+provider "aws" {
+}
+```
+
+**Important**
+---
+- Terraform can create EC2 with hardcoded keys **in the provider block**
+
+- But the S3 backend **ignores those keys and only uses environment variables or AWS CLI profiles for credentials.**
