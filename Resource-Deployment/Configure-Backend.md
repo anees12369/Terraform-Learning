@@ -34,7 +34,24 @@ provider "aws" {
 
 - But the S3 backend **ignores those keys and only uses environment variables or AWS CLI profiles for credentials:**
 
+**Environment Variables:**
+
+- You have to export these every new terminal session
+
 - `export AWS_ACCESS_KEY_ID=`
 - `export AWS_SECRET_ACCESS_KEY=`
 - `export AWS_DEFAULT_REGION=`
+
+**AWS CLI**
+
+`aws configure --profile whateveryouwanttocallit`
+
+```bash
+provider "aws" {
+  region  = "eu-west-1"
+  profile = "whateveryoucalledit"
+}
+```
+- To check if its configured: `aws sts get-caller-identity --profile whateveryoucalledit`
+
 
