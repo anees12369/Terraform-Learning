@@ -116,3 +116,5 @@ resource "aws_instance" "example" {
 - Object = full recipe card (all ingredients + instructions).
 
 - Use when you need a structured config with multiple attributes
+
+- Can contain all 3 primitive types
