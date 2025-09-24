@@ -21,11 +21,25 @@
 ```bash
 variable "instance_type" {
   type        = string
-  description = # documents the purpose of a variable and the value the block expects.
   default = t2.micro
 }
 
 variable "ami_id"
   type = string
   default = ami-1234567
+```
+**`terraform.tfvars` file**
+---
+- Lets say we don't want to use the **default value** of a variable 
+
+- Or we haven't assigned a default value
+
+- The **best practice** is to use a `terraform.tfvars` to specify any explicit values/parse in variable values
+
+- Prevents you from passing in values manually on the CLI every time
+
+- You do this by using the variable name and assigning a value to it:
+
+```bash
+instance_type = "t3.small"
 ```
