@@ -29,9 +29,3 @@ variable "ami_id"
   type = string
   default = ami-1234567
 ```
-```bash
-resource "aws_instance" "two" {
-  ami                     = var.ami_id
-  instance_type           = var.instance_type
-}
-```
