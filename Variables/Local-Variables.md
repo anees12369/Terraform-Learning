@@ -35,3 +35,16 @@ resource "aws_instance" "one" {
   tags          = local.common_tags
 }
 ```
+**Simpler example:**
+---
+```bash
+locals {
+  instance_ami = "ami_1234567
+}
+```
+**Differences**
+---
+
+- 👉 Input variables = flexible values you **pass in** (e.g. through a `.tfvar` file ).
+
+- 👉 Local variables = helper values you compute once and reuse everywhere, a **consistent value** 
