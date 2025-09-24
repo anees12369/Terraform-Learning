@@ -1,0 +1,29 @@
+# **Introduction to Variables in Terraform**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- “Terraform variables make configurations dynamic and reusable by allowing input values like AMI IDs or instance types to be passed into resources, following the DRY principle, and are best defined in a separate variables.tf file.”
