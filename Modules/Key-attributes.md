@@ -1,5 +1,8 @@
 # **Key Attributes of Terraform Modules**
 
+**What makes a good terraform module?**
+---
+
 1. **Outputs** → Modules should provide useful output values (like EC2 instance ID or public IP). This makes the module easier to use in other parts of your configuration.
 
 2. **Documentation** → Always include a README or clear comments explaining what the module does, what inputs it expects, and what outputs it provides. Well-documented modules save time for others (and future you).
