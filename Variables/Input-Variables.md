@@ -43,3 +43,4 @@ variable "ami_id"
 ```bash
 instance_type = "t3.small"
 ```
+
