@@ -39,7 +39,7 @@ resource "aws_instance" "one" {
 ---
 ```bash
 locals {
-  instance_ami = "ami_1234567
+  instance_ami = "ami_1234567"
 }
 ```
 **Differences**
