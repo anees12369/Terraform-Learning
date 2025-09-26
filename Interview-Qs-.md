@@ -10,7 +10,7 @@
 
 - Then, **Terraform plans and applies** changes to match the two. 
 
-- One of Terraform’s strengths is that it’s **idempotent**, meaning Terraform only makes changes when something is different. If nothing has changed, it leaves things as they are.
+- One of Terraform’s strengths is that it’s **idempotent**, meaning Terraform only makes changes when something is different. If nothing in the config has changed, it leaves things as they are.
 
 **2. What are the benefits of (IaC)?**
 

@@ -23,3 +23,5 @@
 - If you only update one resource, Terraform changes only to that specific resource
 
 - Leads to **efficient, predictable deployments.**
+
+- e.g. Running the SAME configurations will produce the same results 

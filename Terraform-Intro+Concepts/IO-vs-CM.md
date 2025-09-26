@@ -1,12 +1,8 @@
 # **Infra Orchestration vs Config Management**
 
-- **Infrastructure Orchestration:** This is about **provisioning and managing resources** like servers, networks, databases, and load balancers.
+- **Infrastructure Orchestration:** This is about **provisioning and managing resources** like servers, networks, databases, and load balancers. **Example tools:** Terraform, CloudFormation.
 
-- **Example tools:** Terraform, CloudFormation.
-
-- **Configuration Management:** **Configuring the software and settings** on those resources once they exist.
-
-- **Example tools:** Ansible, Puppet, Chef.
+- **Configuration Management:** **Configuring the software and settings** on those resources once they exist. **Example tools:** Ansible, Puppet, Chef.
 
 **For example** 
 ---
@@ -25,3 +21,7 @@
 - It installs Nginx, deploys your web app code, sets environment variables, and configures logging.
 
 - Now the servers are not just empty boxes — they’re running a **ready-to-serve application.**
+
+**Summary**
+---
+- **Infra Orchestration** deploys infrastructure, **configuration management** manages software on it
